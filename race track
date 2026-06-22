@@ -1,35 +1,24 @@
-tracks = ["Barcelona", "Suzuka", "Daytona", "Melvin", "Silverstone"]
+# Store tracks and their respective lap times(seconds) in a dictionary
+track_times = {
+    "Barcelona": 103,
+    "Suzuka": 117,
+    "Daytona": 104,
+    "Melvin": 123,
+    "Silverstone": 116
+}
 
-print(f"{tracks}.")
-
+# Print available tracks
+print(f"Available tracks: {list(track_times.keys())}")
 print("Choose Track")
-
 user_choice = input()
 
-if user_choice == "Barcelona":
+# Check if the chosen track exists in our dictionary
+if user_choice in track_times:
   print("How many laps")
-  laps = input()
-  total_time =  1.43 * laps
-  print(f"Car took {total_time} to finish")
-elif user_choice == "Suzuka":
-  print("How many laps")
-  laps = input()
-  total_time =  1.57 * laps
-  print(f"Car took {total_time} to finish")
-elif user_choice == "Daytona":
-  print("How many laps")
-  laps = input()
-  total_time =  1.44 * laps
-  print(f"Car took {total_time} to finish")
-elif user_choice == "Melvin":
-  print("How many laps")
-  laps = input()
-  total_time =  2.03 * laps
-  print(f"Car took {total_time} to finish")
-elif user_choice == "Silverstone":
-  print("How many laps")
-  laps = input()
-  total_time =  1.56 * laps
-  print(f"Car took {total_time} to finish")
+  laps = int(input())
+  # Finds the number laps and tells time tacken on those laps for the users choosen track
+  lap_time = track_times[user_choice]
+  total_time = lap_time * laps
+  print(f"Car took {total_time} seconds to finish.")
 else:
   print("Not a track choice.")
