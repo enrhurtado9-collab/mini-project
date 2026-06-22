@@ -4,7 +4,10 @@ track_times = {
     "Suzuka": 117,
     "Daytona": 104,
     "Melvin": 123,
-    "Silverstone": 116
+    "Silverstone": 116,
+    "Abu Dhabi": 112,
+    "Spa": 150,
+    "Nurburgring": 495
 }
 
 # Print available tracks
