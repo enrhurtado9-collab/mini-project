@@ -1,0 +1,35 @@
+tracks = ["Barcelona", "Suzuka", "Daytona", "Melvin", "Silverstone"]
+
+print(f"{tracks}.")
+
+print("Choose Track")
+
+user_choice = input()
+
+if user_choice == "Barcelona":
+  print("How many laps")
+  laps = input()
+  total_time =  1.43 * laps
+  print(f"Car took {total_time} to finish")
+elif user_choice == "Suzuka":
+  print("How many laps")
+  laps = input()
+  total_time =  1.57 * laps
+  print(f"Car took {total_time} to finish")
+elif user_choice == "Daytona":
+  print("How many laps")
+  laps = input()
+  total_time =  1.44 * laps
+  print(f"Car took {total_time} to finish")
+elif user_choice == "Melvin":
+  print("How many laps")
+  laps = input()
+  total_time =  2.03 * laps
+  print(f"Car took {total_time} to finish")
+elif user_choice == "Silverstone":
+  print("How many laps")
+  laps = input()
+  total_time =  1.56 * laps
+  print(f"Car took {total_time} to finish")
+else:
+  print("Not a track choice.")
